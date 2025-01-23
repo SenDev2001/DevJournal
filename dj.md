@@ -490,8 +490,9 @@ Future Improments ideas for my velocity rush game are as follows:
 - Mixamo (s.d.) At: https://www.mixamo.com/#/?page=1&type=Character (Accessed  22/01/2025).
 - Russian buildings pack | 3D Urban | Unity Asset Store (s.d.) At: https://assetstore.unity.com/packages/3d/environments/urban/russian-buildings-pack-113375 (Accessed  22/01/2025).
    
-
-
+## Using AI Tools
+ I used AI to identify, fix, and debug bugs in my scripts. for example I got help for in my leaderboard creating a UnityWebRequest in Unity to send a POST request with JSON data to a addScoreUrl to submit  data , I got step-by-step instructions on how to do it and and how to fix it.
+ 
 ## Bibliography 
 - Subway Surfers Case Study (s.d.) At: Unity Case Study - Subway Surfers (Accessed 03/12/2024).
 - Temple Run Template Documentation (2024) At: [Temple Run Wiki] (https://templerun.fandom.com/wiki/Category:Template_documentation) (Accessed 03/12/2024).

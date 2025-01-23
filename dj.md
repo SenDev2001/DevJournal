@@ -45,7 +45,7 @@ Velocity Rush is a 3D endless runner game designed for android and webgl and itâ
   #### [Game Scene Screenshots] 
     - Menu Scene
 
-    <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot%202025-01-19%20225658.png?raw=true" alt="Development Screenshot" width="800" height="300">
+      <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot%202025-01-19%20225658.png?raw=true" alt="Development Screenshot" width="800" height="300">
 
     - Game Scene
 

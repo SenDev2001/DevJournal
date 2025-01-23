@@ -11,42 +11,41 @@
 ## INTRODUCTION
 Velocity Rush is a 3D endless runner game designed for android and webgl and it’s made for the winter season environment and player have run through road while snow falling and avoid obstacles and collecting coins also velocity rush has leaderboard system so players can see names and score what they got and whose got high score. And the highest score show in top in the leaderboard. 
 ## RESEARCH 
-- I have done research subway surface case study to better understand its gaming mechanics and design components, which may inspire and lead the development of my own game. I looked at key elements including endless runner gameplay the necessity of user input, and the usage dynamic challenges. This case study helped me grasp the fundamental features of a successful mobile game, such as level design, coins, player movements and obstacles which I want to include to my project.
-  - References - Subway Surfers case study (s.d.) At: https://unity.com/case-study/subway-surfers (Accessed 03/12/2024).
-    
-- Also, I have done research Temple Run Documentation to get ideas for my velocity rush game, The documentation game details on gaming mechanics, design aspects, and user engagement methods. This study helped me in better understanding basic aspects such as obstacle design, powerups and level design same as subway surfers.
-  - References - Template documentation (2024) At: https://templerun.fandom.com/wiki/Category:Template_documentation (Accessed 03/12/2024).
+- ### Subway surfers Research
+  - I have done research subway surfers case study to better understand its gaming mechanics and design components, which may inspire and lead the development of my own game. I looked at key elements including endless runner gameplay the necessity of user input, and the usage dynamic challenges. This case study helped me grasp the fundamental features of a successful mobile game, such as level design, coins, player movements and obstacles which I want to include to my project.
+    - References - Subway Surfers case study (s.d.) At: https://unity.com/case-study/subway-surfers (Accessed 03/12/2024).
+      
+- ### Temple Run Research    
+  - Also, I have done research Temple Run Documentation to get ideas for my velocity rush game, The documentation game details on gaming mechanics, design aspects, and user engagement methods. This study helped me in better understanding basic aspects such as obstacle design, powerups and level design same as subway surfers.
+    - References - Template documentation (2024) At: https://templerun.fandom.com/wiki/Category:Template_documentation (Accessed 03/12/2024).
+      
+- ### New Unity Input System Research 
+  - I looked at documentation in unity input systems for mobile. The unity input system literature version 1.11.2 provided a detailed description of how to configure and implement touch controllers, multi touch gestures and swipe recognition on mobile devices.
+    -  References - Input System | Input System | 1.11.2 (s.d.) At: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html (Accessed 03/12/2024).
+  - I followed YouTube videos to understand swipe detection for my first mobile game velocity rush. These tutorials demonstrated how to create swipe detection for touch and mouse inputs in unity’s new input system. I learnt how to detect directional swipes, analyse input data and combine swipe actions into game mechanism. In addition, I learnt visual upgrades such as trail effects to improve the user experience. This understanding allowed me to develop responsive and accurate swipe controls, resulting in intuitive gameplay. First I used old unity input system after I change it to new unity input system because its good for cross platform controls and also it has smooth swipe detection. These elements are essential for mobile games, since they increase play interest and correspond with the main dynamics of and endless runner game.
+    - References - detect Swipe NEW Input system (touch / mouse) | how to detect swipe in unity with New Input system (2022) At: https://www.youtube.com/watch?v=Xm9_rcmv3UU (Accessed 03/12/2024). Swipe Detection + Trail Effect w/ New Input System - Unity Tutorial (2021) At: https://www.youtube.com/watch?v=XUx_QlJpd0M (Accessed 03/12/2024).Swipe Detection + Trail Effect w/ New Input System - Unity Tutorial - YouTube (s.d.) At: https://www.youtube.com/watch?v=XUx_QlJpd0M (Accessed  12/12/2024).
 
-- I looked at documentation in unity input systems for mobile. The unity input system literature version 1.11.2 provided a detailed description of how to configure and implement touch controllers, multi touch gestures and swipe recognition on mobile devices.
-  -  References - Input System | Input System | 1.11.2 (s.d.) At: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html (Accessed 03/12/2024).
-
-- I followed YouTube videos to understand swipe detection for my first mobile game velocity rush. These tutorials demonstrated how to create swipe detection for touch and mouse inputs in unity’s new input system. I learnt how to detect directional swipes, analyse input data and combine swipe actions into game mechanism. In addition, I learnt visual upgrades such as trail effects to improve the user experience. This understanding allowed me to develop responsive and accurate swipe controls, resulting in intuitive gameplay. First I used old unity input system after I change it to new unity input system because its good for cross platform controls and also it has smooth swipe detection. These elements are essential for mobile games, since they increase play interest and correspond with the main dynamics of and endless runner game.
-  - References - detect Swipe NEW Input system (touch / mouse) | how to detect swipe in unity with New Input system (2022) At: https://www.youtube.com/watch?v=Xm9_rcmv3UU (Accessed 03/12/2024). Swipe Detection + Trail Effect w/ New Input System - Unity Tutorial (2021) At: https://www.youtube.com/watch?v=XUx_QlJpd0M (Accessed 03/12/2024).Swipe Detection + Trail Effect w/ New Input System - Unity Tutorial - YouTube (s.d.) At: https://www.youtube.com/watch?v=XUx_QlJpd0M (Accessed  12/12/2024).
-
-
-- I have done research flask documentation to learn how to build a leaderboard system with Flask. I learnt Flask’s lightweight and flexible characteristics, as well as how to configure routes for receiving request and dynamically handle data with templates. I also looked at flask SQL Alchemy for database interaction and learnt how to create Restful APIs for leaderboard functions, Additionally I learnt how to deploy flask apps and secure routs, this study game me the groundwork to create a practical and user-friendly leaderboard system. 
-  - References - Welcome to Flask — Flask Documentation (3.1.x) (s.d.) At: https://flask.palletsprojects.com/en/stable/ (Accessed  12/12/2024).
-
-
-- I studied the Flask-CORS guide and it helped me to allow cross-origin requests in my Flask backend. If the Unity game front-end and Flask backend are maintained in separate domains, cross-origin requests are naturally blocked in browsers. Using CORS(app) helped me get better performance between my game and the backend server.
-  - References - Flask-CORS — Flask-Cors 3.0.10 documentation (s.d.) At: https://flask-cors.readthedocs.io/en/latest/ (Accessed 12/12/2024).
-
-- I have done research on how to deploy a flask in pythonanywhere. This guide give detailed information on how to setting up with a flask backend server. I've been taught how to configure WSGI, define environments, and manage database connections. That's all I need to deploy a Flask app, as well as instructions for running the app with ease Deployed the leaderboard server and provided the technical principles necessary to facilitate easy access and interaction with my game. 
-  - References - PythonAnywere (2015) Setting up Flask applications on PythonAnywhere. At: https://help.pythonanywhere.com/pages/Flask/ (Accessed  12/12/2024).
-
-
-- I did research about how to integrate UnityWebRequest with Flask server by watching YouTube video tutorials. The purpose of this study is to understand the methods required to create connections between a game and a Flask-backend server, specifically the requirements for sending and receiving data efficiently. 
-  - References - High Score Table with Saving and Loading (Unity Tutorial for Beginners) - YouTube (s.d.) At: https://www.youtube.com/watch?v=iAbaqGYdnyI&t=150s (Accessed 03/12/2024). How to send a request from a Unity game to a Flask application server - YouTube (s.d.) At: https://www.youtube.com/watch?v=6JXYiGWGG-Y (Accessed 03/12/2024). Unity3d - UnityWebRequest Get async tutorial - YouTube (s.d.) At: https://www.youtube.com/watch?v=Yp8uPxEn6Vg&t=136s (Accessed 03/12/2024).
+- ### Leaderboard Research 
+  - I have done research flask documentation to learn how to build a leaderboard system with Flask. I learnt Flask’s lightweight and flexible characteristics, as well as how to configure routes for receiving request and dynamically handle data with templates. I also looked at flask SQL Alchemy for database interaction and learnt how to create Restful APIs for leaderboard functions, Additionally I learnt how to deploy flask apps and secure routs, this study game me the groundwork to create a practical and user-friendly leaderboard system. 
+    - References - Welcome to Flask — Flask Documentation (3.1.x) (s.d.) At: https://flask.palletsprojects.com/en/stable/ (Accessed  12/12/2024).
+  - I studied the Flask-CORS guide and it helped me to allow cross-origin requests in my Flask backend. If the Unity game front-end and Flask backend are maintained in separate domains, cross-origin requests are naturally blocked in browsers. Using CORS(app) helped me get better performance between my game and the backend server.
+    - References - Flask-CORS — Flask-Cors 3.0.10 documentation (s.d.) At: https://flask-cors.readthedocs.io/en/latest/ (Accessed 12/12/2024).
+  - I have done research on how to deploy a flask in pythonanywhere. This guide give detailed information on how to setting up with a flask backend server. I've been taught how to configure WSGI, define environments, and manage database connections. That's all I need to deploy a Flask app, as well as instructions for running the app with ease Deployed the leaderboard server and provided the technical principles necessary to facilitate easy access and interaction with my game. 
+    - References - PythonAnywere (2015) Setting up Flask applications on PythonAnywhere. At: https://help.pythonanywhere.com/pages/Flask/ (Accessed  12/12/2024).
+  - I did research about how to integrate UnityWebRequest with Flask server by watching YouTube video tutorials. The purpose of this study is to understand the methods required to create connections between a game and a Flask-backend server, specifically the requirements for sending and receiving data efficiently. 
+    - References - High Score Table with Saving and Loading (Unity Tutorial for Beginners) - YouTube (s.d.) At: https://www.youtube.com/watch?v=iAbaqGYdnyI&t=150s (Accessed 03/12/2024). How to send a request from a Unity game to a Flask application server - YouTube (s.d.) At: https://www.youtube.com/watch?v=6JXYiGWGG-Y (Accessed 03/12/2024). Unity3d - UnityWebRequest Get async tutorial - YouTube (s.d.) At: https://www.youtube.com/watch?v=Yp8uPxEn6Vg&t=136s (Accessed 03/12/2024).
+  - Also I got Some help from chatgpt how to do it from the beginning because i never did it before so from chat gpt i got lot of knoledge about how to handle a back end server how to install flask and flask cors.
 
 ## Game Development Process
-### Process Of Completing The task 
+### Process Of Completing The task
+- #### Project Management:
+  <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot%202025-01-23%20221656.png?raw=true" alt="Development Screenshot" width="800" height="350">
 - #### Gameplay Design: 
-  - I started by researching current endless runner games to learn about effective game mechanism. I concentrated on creating important gameplay elements such as player movement, swipe gestures, obstacle avoidance (add road barriers and busses), and snow partials.
-
+  - I first started researching Endless Runner games. At that time, I was working on road obstacles, buses, swipe gestures, and snow particles as important elements of the game. I initially thought of making a regular Endless Runner game, but then decided to include a Christmas theme. This is my first time making a mobile game. I thought the swipe controls were difficult at first, but I quickly got the hang of it.
   #### [Game Scene Screenshots] 
     - Menu Scene
 
-    <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot%202025-01-19%20225658.png?raw=true" alt="Development Screenshot" width="800" height="350">
+    <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot%202025-01-19%20225658.png?raw=true" alt="Development Screenshot" width="800" height="300">
 
     - Game Scene
 
@@ -79,6 +78,10 @@ Velocity Rush is a 3D endless runner game designed for android and webgl and it�
 
   <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot_20250108-114339.png?raw=true" alt="Development Screenshot" width="250">
   <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Screenshot_20250120-153131.png?raw=true" alt="Development Screenshot" width="250">
+  
+- #### Leaderboard Server Side and Client Side
+  <img src="https://github.com/SenDev2001/Development-Journal/blob/main/Untitled-1.png?raw=true" alt="Development Screenshot" width="700" height="350">
+
 
 
 - #### Testing and Feedbacks:

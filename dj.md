@@ -106,6 +106,7 @@ Velocity Rush is a 3D endless runner game designed for android and webgl and itâ
      activeRoads.Enqueue(road);
      spawnZ += roadLength;
      currentPrefabIndex = (currentPrefabIndex + 1) % prefabOrder.Length;
+}
 ```
 
  - Spawning Snow
@@ -307,20 +308,19 @@ public class M_ScoreManager : MonoBehaviour
         SubmitScore();
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
-}
+    }
 
-[System.Serializable]
-public class LeaderboardEntry
-{
-    public string name;
+    [System.Serializable]
+    public class LeaderboardEntry
+    {
+     public string name;
     public int score;
-}
-
-[System.Serializable]
-public class LeaderboardResponse
-{
+   }
+ [System.Serializable]
+ public class LeaderboardResponse
+ {
     public LeaderboardEntry[] leaderboardEntries;
-}
+ }
   ```
 
   In this code snippet I use my full code of the ScoreManager. Because this is the hardest part I done. ScoreMAnager is a method designed to implement a player score management and leaderboard system in Unity. Its main function is to control the player's score and send it to the server via API and retrieve the leaderboard. It makes it easy to send and receive data via JSON using UnityWebRequest. This class establishes a live and efficient interaction between the game and the web service, thereby providing the player with a user-friendly experience of manipulating the score and leaderboard system data. And I used chatgpt to create these code comments is its help to understand my code.
@@ -491,7 +491,7 @@ Future Improments ideas for my velocity rush game are as follows:
 - Russian buildings pack | 3D Urban | Unity Asset Store (s.d.) At: https://assetstore.unity.com/packages/3d/environments/urban/russian-buildings-pack-113375 (Accessed  22/01/2025).
    
 ## Using AI Tools
- I used AI to identify, fix, and debug bugs in my scripts. for example I got help for in my leaderboard creating a UnityWebRequest in Unity to send a POST request with JSON data to a addScoreUrl to submit  data , I got step-by-step instructions on how to do it and and how to fix it.
+ I used chat gpt to identify, fix, and debug bugs in my scripts. for example I got help for in my leaderboard creating a UnityWebRequest in Unity to send a POST request with JSON data to a addScoreUrl to submit  data , I got step-by-step instructions on how to do it and and how to fix it.
  
 ## Bibliography 
 - Subway Surfers Case Study (s.d.) At: Unity Case Study - Subway Surfers (Accessed 03/12/2024).
